@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function () {
+            console.log("onload执行");
+        }
+        document.addEventListener("DOMContentLoaded",function () {
+            //意味着DOM（节点）加载完毕
+            console.log("dom加载完毕");
+        },false);
+        document.onreadystatechange=function () {
+            console.log(document.readyState);
+            if(document.readyState=="complete"){
+                console.log("加载完毕");
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489847546580&di=02f8ca6fbd261c425a78274f93c89420&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201702%2F19%2F105619rqwjwlu3m3c3amfu.jpg" />
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489847546578&di=04a25a953ba73fb771ba7d228e483421&imgtype=0&src=http%3A%2F%2Fimg.tuku.cn%2Ffile_big%2F201501%2Fca4e5d0c26ad4b64a100595c6991025f.jpg" />
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489847546579&di=dc7a4bf3c80c5f490830fc8a1dea3f2a&imgtype=0&src=http%3A%2F%2Fimg.tuku.cn%2Ffile_big%2F201501%2F7dcd94aafb5f4b02a32b072f8f69bf2f.jpg" />
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489847546579&di=704956cc7b0428efe924d8cd81d1187f&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201702%2F19%2F105539bvqzffjj7b8jmqmb.jpg" />
+</body>
+</html>
