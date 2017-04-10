@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+事件冒泡:当一个事件被最底层的标签接收的时候，它会像水里面的泡泡一样，一层一层的往上冒
+事件捕获:是由netscape提出来，从最上层的节点开始接收，然后往下
+DOM事件流： 事件捕获    目标事件   事件冒泡
+<div id="odiv">
+    <p id="op">
+        <span id="ospan">请点击我</span>
+    </p>
+</div>
+<script src="cfj.js"></script>
+<script>
+    var div=document.getElementById("odiv");
+    var p=document.getElementById("op");
+    var span=document.getElementById("ospan");
+    var body=document.body;
+
+    div.onclick=function () {
+        alert("div被点击");
+    }
+    p.onclick=function () {
+        alert("p被点击");
+    }
+    span.onclick=function () {
+        alert("span被点击");
+    }
+    body.onclick=function () {
+        alert("body被点击");
+    }
+    document.onclick=function () {
+        alert("document被点击")
+    }
+</script>
+</body>
+</html>
