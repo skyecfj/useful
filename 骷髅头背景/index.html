@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骷髅头</title>
+    <style>
+        html,body{
+            font-family: Helvetica , Arial , sans-serif;
+            line-height: 16px;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 700px;
+            background:-webkit-linear-gradient( top,#009900,#9A9A9A);
+            background: -moz-linear-gradient( top,#009900,#9A9A9A);;
+        }
+    </style>
+</head>
+<body>
+<script src="jquery-2.0.3.js"></script>
+<script src="skull.js"></script>
+
+<script>
+    $(function () {
+        $.fn.flower({
+            flowerChar:"&#9760",
+            minSize:10,
+            maxSize:100,
+            timer:100,
+            flowerColor:"black"
+        })
+    })
+</script>
+</body>
+</html>
